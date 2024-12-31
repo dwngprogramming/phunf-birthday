@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday - Phunf</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay loop muted id="bg-video" src="./media/background-orange.mp4"></video>
+    <audio id="bg-audio" autoplay loop>
+        <source src="./media/birthday.mp3" type="audio/mpeg">
+    </audio>
+    <div class="overlay" id="overlay"></div>
+    <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+        <div class="text-wrapper">
+            <div class="animated-text">
+                Chúc mừng sinh nhật <span></span>
+            </div>
+        </div>
+        <div class="envelope-wrapper" id="envelope">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="body">
+                    <p class="click-me">Click vào thư đi ~</p>
+                </div>
+            </div>
+            <div class="letter unread">
+                <div class="card text-center">
+                    <div class="card-header bg-danger fs-3 text-white">Hello Phunf 💖💌</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tại vì Le muốn viết dòng này cho m mà viết không được nên phải gửi thư thôi. </h5>
+                        <br>
+                        <h1 style="color: red; font-size:60px;">"21 years since mom found @p.hunf in the bin"</h1>
+                        <br>
+                        Hết rồi đó cưng =))))
+                    </div>
+                    <button class="btn btn-danger btn-sm close-btn">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <button id="playButton">Bật nhạc nền ~</button>
+    </div>
+
+    <!-- Bootstrap JS và jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
